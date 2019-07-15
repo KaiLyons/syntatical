@@ -1,0 +1,2 @@
+# syntatical
+Use JavaScript differently
