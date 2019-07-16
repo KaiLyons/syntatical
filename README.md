@@ -1,6 +1,8 @@
 # Syntatical
 Use JavaScript differently
 
+By [Safyre Lyons](https://safyrelyons.com)
+
 ## Install:
 `npm i syntatical`
 
@@ -19,23 +21,42 @@ Use JavaScript differently
 
 `lower_all` - Lowercases all upercase in string
 
-`limit` - limits a string
+`limit` - Limits a string
+
+`upper_all` - Uppercases all lowercase in string
+
+`match` - Finds a match
+
+`arr_buff` - Counts args in array
+
+`arr_join` - Joins array into string
+
+`str_split` - Splits string into array
 
 ## Syntax
 ```javascript
 
 var s = require('syntatical');
+var e = ["one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve"];
+var r = "ULTRA COOL UPPERCASE THING!"
+var ls = "rather long strings are annoying, so therefore I developed syntatical, to make longer strings shorter with less code. I also let this app do other things"
 
 s.write('one')
 s.print('two')
 s.printf('three')
 
 s.rand_num(1000)
-s.rand(["one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve"])
+s.rand(e)
 
 s.stop_app()
 
-s.lower_all("THIS IS TO lOWRcAsE")
+s.lower_all(r)
 
-s.limit("rather long strings are annoying, so therefore I developed syntatical, to make longer strings shorter with less code. I also let this app do other things", 5)
+s.limit(ls, 5)
+
+s.upper_all(ls)
+
+s.str_split(ls)
+
+s.match(ls, /string/)
 ```
